@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Forme:</h2>
+    <p>Na ovoj stranici cemo odraditi forme (one najvaznije)i videti na koji nacin
+        fukcioniste npr. prijavljivanje na nekoj drustvenoj mrezi
+    </p>
+    <!-- form,h1,p,button.. su tagovi ,
+        a action, type i jos neki koje cemo kasnije raditi su atributi -->
+    <!-- Unutar form taga imamo atribut action koji se odnosi na to gde ce nas odvesti 
+        dugme submit -->
+    <form action="./index2.html">
+        <label for="name">Unesite svoje ime</label>
+        <input type="text" name="Ime" id="name" placeholder="Unesite ime" required>  <br>
+
+        <label for="lastname">Unesite svoje prezime</label>
+        <input type="text" name="Prezime" id="Lastname" placeholder="Unesite prezime" required> <br>
+
+        <label for="email">Unesite svoju e-mail adresu</label>
+        <input type="email" name="email" id="email" placeholder="Unesite email"><br>
+
+        <label for="pass">Unesite sifru</label>
+        <input type="password"  name="sifra" id="pass" required> <br>
+
+        <label for="age">Unesite svoje godine</label>
+        <input type="number" name="Godine" id="age" min="18" max="135" step="3"> <br>
+
+        <label for="birthdate">Unesite datum rodjenja</label>
+        <input type="date" name="Datum" id="birthdate" min="1900-01-01" max="2003-01-01"> <br>
+
+        <p>Odaberite svoje omiljeno voce:</p>
+
+        <label for="Banana"> Banana</label>
+        <input type="checkbox" name="Banana" id="Banana"><br>
+
+        <label for="Jabuka"> Jabuka</label>
+        <input type="checkbox" name="Jabuka" id="Jabuka"><br>
+
+        <label for="Nar"> Nar</label>
+        <input type="checkbox" name="Nar" id="Nar" checked><br>
+
+        <p>Unesite pol:</p>
+        <label for="male">Musko</label>
+        <input type="radio" name="Pol" id="male" value="male" checked> <br>
+        <label for="female">Zensko</label>
+        <input type="radio" name="Pol" id="Female" value="female"> <br>
+
+        <label for="eyecolor">Unesite boju ociju</label>
+        <select name="eyecolor" id="eyecolor">
+            <option value="Green">Zeleno</option>
+            <option value="Blue">Plavo</option>
+            <option value="Brown" selected> Braon</option>
+            <option value="Black">Crne</option>
+        </select>
+        <br>
+
+            <label for="color">Unesite omiljenu boju</label>
+            <input type="color" name="boja" id="color">
+
+        <br>
+
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Resetuj sve</button>
+    </form>
+</body>
+</html>

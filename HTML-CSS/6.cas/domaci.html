@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./domaci.css">
+    <title>Domaci 6.cas</title>
+    
+</head>
+<body>
+    <form action="./domaci.html">
+        <div class="conteiner">
+        <label for="name">Unesite svoje ime</label>
+        <input type="text" name="Ime" id="name" placeholder="Unesite ime" required>  <br>
+
+        <label for="lastname">Unesite svoje prezime</label>
+        <input type="text" name="Prezime" id="Lastname" placeholder="Unesite prezime" required> <br>
+
+        <label for="email">Unesite svoju e-mail adresu</label>
+        <input type="email" name="email" id="email" placeholder="Unesite email"><br>
+
+        <label for="pass">Unesite sifru</label>
+        <input type="password"  name="sifra" id="pass" required> <br>
+
+        <label for="age">Unesite svoje godine</label>
+        <input type="number" name="Godine" id="age" min="18" max="135" step="3"> <br>
+
+        <label for="birthdate">Unesite datum rodjenja</label>
+        <input type="date" name="Datum" id="birthdate" min="1900-01-01" max="2003-01-01"> <br>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Resetuj sve</button>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,112 @@
+*{
+    margin: 0px auto;
+    padding: 0%;
+}
+.header{
+    background-color: blue;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.header h1{
+    color: white;
+    display: flex;
+    flex-grow: 10;
+    align-items: center;
+    justify-content: start;
+    align-self: center;
+    margin-left: 100px;
+}
+.header a {
+    color: white;
+    display: flex;
+    flex-grow: 0.5;
+    align-items: center;
+    justify-content: start;
+    align-self: center;
+    font-size: 20px;
+    list-style: none;
+    text-align: none;
+}
+.linkovi{
+    color: white;
+    display: flex;
+    flex-grow: 4;
+    align-items: center;
+    justify-content: start;
+    align-self: center;
+    font-size: 25px;
+}
+.linkovi a{
+    text-decoration: none;
+    font-size: 25px;
+}
+button{
+    margin-right: 100px;
+    font-size: 20px;
+    border: solid blue 1 px;
+    background-color: white;
+    color: blue;
+    border-radius: 20px;
+    padding: 10px;
+}
+/* .glavni ,.box1 ,.box2 ,.box3, .box4{
+    background-color: blueviolet;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction:row; */
+
+/* .div{
+    display: flex;
+} */ 
+.container img {
+    float: right;
+    width: 560px;
+    height: 500px;
+}
+
+.container .box1,.box2,.box3,.box4 {
+    background-color: #FAF9FF;
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .box1 i,.box2 i,.box3 i,.box4 i {
+    margin-top: 25px;
+}
+
+.container .box1:hover,.box2:hover,.box3:hover,.box4:hover {
+    box-shadow: 1px 1px 15px rgb(196, 196, 196);
+    background-color: white;
+}
+
+.container .box1 h3,.box2 h3,.box3 h3,.box4 h3 {
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.container .box1 p,.box2 p,.box3 p,.box4 p {
+    margin-top: 10px;
+    color: #797979;
+}
+
+.container {
+    display: flex;
+    margin: 100px 0;
+    flex-wrap: wrap;
+}
+
+.container .div {
+    margin: 0 0 0 150px;
+}
+
+.container .div1 {
+    margin: 50px 100px 0 0;}
+

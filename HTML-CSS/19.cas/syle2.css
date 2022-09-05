@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+}
+
+.header{
+    background-color: gray;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.box1{
+    display: flex;
+    flex-grow: 10;
+    align-items: center;
+    justify-content: start;
+    align-self: center;
+}
+.box2{
+    display: flex;
+    flex-grow: 0.5;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.box3{
+    display: flex;
+    flex-grow: 0.5;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+button{
+    text-transform: uppercase;
+    background-color: rgb(46, 44, 65);
+    border: solid rgb(255, 255, 255) 1px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+.naslov{
+    margin: 50px;
+}
+.parent{
+    height: 410px;
+    display:flex;
+    margin: 50px;
+    
+}
+img{
+    display: flex;
+    height: 400px;
+    flex-grow: 1;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 20px;
+}
+.tekst{
+    display: flex;
+    font-size: 25px;
+    flex-grow: 3;
+    padding: 20px;
+}

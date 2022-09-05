@@ -1,0 +1,17 @@
+button{
+    color: yellow;
+    background-color: gray;
+}
+input{
+    color: yellow;
+    background-color: gray;
+}
+label{
+    color: black;
+    background-color: aqua;
+}
+.conteiner{
+    width: 400px;
+    height: 150px;
+    background-color: orange;
+}

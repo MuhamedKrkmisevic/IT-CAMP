@@ -1,0 +1,142 @@
+.container {
+    display: inline-block;
+    background-color: #f6f7f8;
+    width: 738px;
+    height: 312px;
+    padding: 16px;
+
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    background-color: #f6f7f8;
+    backface-visibility: 0.75;
+    color: #4b4d60;
+    font-family: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    background-color: #f6f7f8;
+    backface-visibility: 0.75;
+    font-family: inherit;
+    width: 300;
+    height: 16;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a5a9b4;
+    font-size: smaller;
+}
+
+h1 {
+    text-align: center;
+    backface-visibility: 0.75;
+    color: #272e3c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #7377f2;
+    align-items: center;
+    text-align: center;
+
+}
+
+.w-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.left-0 {
+    left: 0%;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.leading-none {
+    line-height: 1;
+}
+
+.justify-center {
+    justify-content: bottom;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-4 {
+    width: 1rem;
+}
+
+.mr-1 {
+    margin-right: 0.25rem;
+}
+
+.h-4 {
+    height: 1rem;
+}
+
+svg {
+    display: block;
+    place-content: bottom;
+}
+.text-gray-400 {
+    color: gray;
+}
+
+.pr-3 {
+    padding-right: 0.75rem;
+}
+
+.py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.mr-3 {
+    margin-right: 0.75rem;
+}
+
+.leading-none {
+    line-height: 1;
+}
+
+.text-sm {
+    font-size: .875rem;
+}
+
+.items-center {
+    align-items: bottom;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.border-r-2 {
+    border-right-width: 2px;
+}
+
+.border-gray-200 {
+    border-color: rgba(229, 231, 235, var) ;
+}

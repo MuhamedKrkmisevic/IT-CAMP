@@ -1,0 +1,16 @@
+h1{
+    color: red;
+    background-color: rgb(0, 128, 128);
+}
+h2{
+    color: blue;
+    background-color: aqua;
+    font-size: 60px;
+}
+.moja_klasa{
+    color: orange;
+    background-color: black;
+}
+#moj_el{
+    background-color: pink;
+}

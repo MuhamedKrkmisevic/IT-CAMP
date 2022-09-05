@@ -1,0 +1,49 @@
+.tabela1{
+    text-align: center;
+    color: #151533;
+    border-bottom: solid black 2px;
+}
+table{
+    border: solid black 2px;
+    height: 400px;
+    width: 700px;
+    border-collapse: collapse;
+    margin: 50px;
+}
+td{
+    border: dashed black ;
+}
+
+.tab9{
+    text-align: end;
+    border-top: solid black 2px;
+
+}
+
+#boja1{
+    background-color: rgb(201, 209, 189);
+    font-size: 15px;
+    
+}
+#boja2{
+    background-color: rgb(255, 255, 187);
+    font-size: 15px;
+    padding: 5px;
+    
+}
+#red1{
+    background-color: rgb(201, 209, 189);
+    
+}
+#red2{
+    background-color: rgb(255, 255, 187);
+    text-align: center;
+
+}
+#boja1 :hover{
+    background-color: rgb(255, 255, 187);
+}
+#boja2 :hover{
+    background-color: rgb(201, 209, 189);
+}
+

@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+}
+.header{
+    background-color: #60ffca;
+    width: 40vw;
+    height: 8rem;
+    padding: 10px;
+    border: dashed rgb(255, 20, 20) 3px;
+    box-sizing: border-box;
+}
+.after{
+    background-color: #2b84ff;
+    width: 40vw;
+    height: 8rem;
+    border: double rgb(242, 37, 37) 5px;
+}
+.footer{
+    background-color: #2bff52;
+    width: 40vw;
+    height: 8rem;
+    border: dotted rgb(47, 0, 255) 3px;
+}

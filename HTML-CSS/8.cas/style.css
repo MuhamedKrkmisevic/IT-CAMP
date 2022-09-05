@@ -1,0 +1,59 @@
+h1{
+    color: #0b0b5f;
+}
+div h1{
+    color: red;
+}
+.class1 p{
+    color: green;
+}
+.class1{
+    background-color: lightseagreen;
+    width: 400px;
+    height: 300px;
+    /* border: 1px solid black; */
+    /* border: double 3px black; */
+    /* border: 5px dotted darkblue; */
+    border: dashed 5px darkred;
+    
+    /* margin: 10px 15px 20px 10px; */
+    /* gore desno dole levo  */
+    
+    margin: 20px 25px ;
+    /* gore i dole , desno i levo  */
+    
+    /* padding: 20px; */
+    padding: 15px 10px;
+    text-align: center;
+    
+}
+#id1{
+    background-color: lightgreen;
+    width: 400px;
+    height: 300px;
+    margin: 20px 30px;
+    border: 3px dashed rgb(72, 11, 21);
+    /* border-radius: 15px; */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 15px 30px;
+}
+#id1 p:hover{
+    background-color: blueviolet;
+}
+#id1:hover{
+    background-color: pink;
+}
+/* Prednost prilikom dodele stilova ima id u odnosu na klasu */
+#id2{
+    color: burlywood;
+}
+
+.class2{
+    color: purple;
+}
+/* id koristiti ako se pojavljuje samo jednom u tagu. */
+/* istu klasu mozemo na vise html tagova dodeliti */
+#id1 p {
+    color: #0b0b5f;
+}

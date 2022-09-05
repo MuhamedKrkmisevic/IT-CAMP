@@ -1,0 +1,54 @@
+*{
+    margin:0px;
+}
+body{
+    background-color: black;
+}
+
+.parent{
+    margin:20px auto;
+    background-color: lightblue;
+    width: 80vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+    /* Vertikalno poravnanje : */
+    /*(obrnuta logika u odnosu na defaultni flex-direction) */
+    justify-content: center;
+
+    /* alignitems u ovom slucaju odnosi */
+    /* na horizontalno poravnanje */
+    align-items: center;
+
+    /* justify-content:space-between; */
+
+    /* gap: 10px; */
+
+    /* row-gap: 10px; prostor izmedju kontejnera */
+
+    column-gap: 1px;
+}
+.box:nth-of-type(1){
+    width:100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    /* flex-grow: 1; */
+}
+.box:nth-of-type(2){
+    width:100px;
+    height: 100px;
+    background-color: rgb(68, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 3; */
+}
+.box:nth-of-type(3){
+    width:100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    /* flex-grow: 1; */
+}

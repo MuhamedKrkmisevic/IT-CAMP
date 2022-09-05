@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    background-color: rgb(130, 187, 215);
+    height: 70px;
+    color: black;
+}
+
+
+.naziv{
+    float: left;
+    height: 70px;
+    width: 350px;
+    margin-left: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    top: 15px;
+}
+
+.links{
+    float: right;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 28px;
+    margin-top: 21px;
+}
+.links li{
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: rgb(34, 11, 239);
+    border: solid rgb(34, 11, 239) 1px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.links li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.links li :hover{
+    color: transparent;
+    transition: 0.5s;
+}
+.prvi{
+    width: 600px;
+    height: 200px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.drugi{
+    float: right;
+    margin-right: 100px;
+    margin-top: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+.lik{
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+}

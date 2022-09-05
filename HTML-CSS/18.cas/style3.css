@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+}
+.parent{
+    margin: 0 auto;
+    width: 80vw;
+    height: 500px;
+    background-color: rgb(170, 170, 255);
+    display: flex;
+    /* flex-wrap: nowrap; default */
+    justify-content: space-between;
+    align-items: start;
+    /* align-items: center; */
+    /* align-items: flex-end; */
+}
+.box:nth-of-type(1){
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    order: 2;
+
+}
+.box:nth-of-type(2){
+    width: 200px;
+    height: 100px;
+    background-color: rgb(72, 0, 255);
+    order: 3;
+}
+.box:nth-of-type(3){
+    width: 200px;
+    height: 100px;
+    background-color: rgb(59, 240, 27);
+    order: 1;
+}
