@@ -22,4 +22,10 @@ const niz = [-9, -78, 4, 17, -22, -5, 7, 6, 10, 18];
 
 const DATA1 = [2, 26, 38, 75, 11, 29];
 const DATA2 = ["a", "b", "c", "d", "e"];
-const secondTask = () => {};
+const secondTask = (arr1, arr2) => {
+  const newArr = arr1.concat(arr2);
+  const newArr2 = newArr.filter((element) => element % 2 === 0);
+  newArr.unshift(10, 20);
+  return newArr + newArr2;
+};
+console.log(secondTask(DATA1, DATA2));
