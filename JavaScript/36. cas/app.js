@@ -1,35 +1,45 @@
-// const isPalindrom = (broj) => {
-//   const stringBroj = broj.toString();
-//   let obrnutiBroj = "";
-//   for (let i = stringBroj.length - 1; i <= 0; i--) {
-//     obrnutiBroj += stringBroj[i];
-//   }
-//   const obrnutiBroj1 = +obrnutiBroj;
-//   if (obrnutiBroj1 === broj) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };
-// console.log(isPalindrom(11));
+// reduceRight() - isto kao reduce, samo sto ucitavanje niza ide sa desne strane.
 
-// const hightestPalindrom3 = () => {
-//   let palidroms = "";
-//   for (let i = 100; i <= 999; i++) {
-//     for (let j = 100; j <= 999; j++) {
-//       if (isPalindrom(i * j) && !palidroms.includes(i * j)) {
-//         palidroms.push(i * j);
-//       }
-//     }
-//   }
-//   palidroms.sort((a, b) => b - a);
-//   return palidroms;
-// };
-// console.log(hightestPalindrom3());
+const niz = [1, 2, 33, 4, 5];
+const suma = niz.reduce((prev, curr) => prev + curr);
 
-const niz = ["a", "b", "c", "d", "e"];
-for (let i = 1; i <= 10; i++) {
-  for (let j of niz) {
-    console.log(i + j);
-  }
-}
+// every() metoda ispituje da li je svaki element niza
+// prosao test. Rezultat je boolean(true ili false).
+
+const godine = [15, 14, 18, 18, 18, 16, 19, 17, 19];
+const isEveryAdult = godine.every((element) => element >= 18);
+console.log(isEveryAdult);
+const adultArr = godine.filter((element) => element >= 18);
+const isEveryAdult2 = adultArr.every((element) => element >= 18);
+console.log(isEveryAdult2);
+// some() metoda ispituje da li bar jedan element niza zadovoljava odredjeni uslov. Takodje je boolean
+
+const isSomeAdult = godine.some((element) => element >= 18);
+console.log(isSomeAdult);
+
+// find() metoda nam vraca  prvi element koji ispunjava odredjeni uslov.
+
+const grupa = [
+  "talib",
+  "abdurahman",
+  "harun",
+  "amine",
+  "muusa",
+  "ahmed",
+  "Muhamed",
+  "imran",
+];
+const firstAdult = grupa.find((element) => element.length > 5);
+console.log(firstAdult);
+
+// findIndex() metoda nam vraca index prvog elementa koji je
+// ispunio uslov zadat unutar funkcije.
+
+const firstAdult2 = grupa.findIndex((element) => element.length > 5);
+console.log(firstAdult2);
+
+// Array.From() metoda nam vraca niz iz bilo kojeg objekta koji je iterirajuci (koji ima length svojstvo)
+// Ova metoda nam vraca niz gde je svaki element jedan karakter stringa koji pretvaramo u niz.
+const recenica = "Ovo mora biti niz";
+const MustBeArray = Array.from(recenica);
+console.log(MustBeArray);
