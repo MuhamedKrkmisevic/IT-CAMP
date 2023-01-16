@@ -1,21 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import StyledButton from "./components/StyledButton/StyledButton";
+import StyledHeader from "./components/StyledHeader/StyledHeader";
 function App() {
   return (
     <div className="App">
+      <StyledHeader></StyledHeader>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <StyledButton innerText="CLICK"></StyledButton>
+
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          MUHAMED-NIT
         </a>
       </header>
     </div>
