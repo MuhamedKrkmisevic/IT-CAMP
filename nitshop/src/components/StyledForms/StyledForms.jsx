@@ -4,7 +4,7 @@ import "./StyledForms.css";
 
 function StyledForms(props) {
   return (
-    <div class="class1">
+    <div>
       <label for="name">Unesite svoje ime</label>
       <input
         type="text"

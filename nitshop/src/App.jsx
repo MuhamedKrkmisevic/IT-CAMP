@@ -35,7 +35,7 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          MUHAMED-NIT
+          MUHAMED-GIT.HUB
         </a>
       </header>
     </div>
