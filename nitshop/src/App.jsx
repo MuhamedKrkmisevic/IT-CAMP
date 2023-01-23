@@ -1,44 +1,26 @@
-import React, { useState, useEffect } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import StyledButton from "./components/StyledButton/StyledButton";
-import StyledInput from "./components/StyledInput/StyledInput";
-import StyledHeader from "./components/StyledHeader/StyledHeader";
-import StyledForms from "./components/StyledForms/StyledForms";
+import CustomForm from "./components/CustomForm/CustomForm";
+import CustomDiv from "./components/CustomDiv/CustomDiv";
+import React, { useState } from "react";
 
 const App = () => {
-  const [innerText, setInnerText] = useState("");
-  const [clicked, setClicked] = useState(false);
-  const [inputValue, setInputValue] = useState();
+  const [fullName, setFullName] = useState("");
 
-  useEffect(() => {
-    clicked ? setInnerText("clicked") : setInnerText("Click me");
-  }, [clicked]);
-  function buttonClick() {
-    setClicked(!clicked);
+  function dataGrabber(name, lastName) {
+    let fullName = name + " " + lastName;
+    console.log(fullName);
+    setFullName(fullName);
   }
-  function onChangeFunctions(event) {
-    setInputValue(event.target.value);
-  }
-
   return (
     <div className="App">
-      <StyledHeader></StyledHeader>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <StyledButton innerText={innerText} onClickHandler={buttonClick} />
-        <StyledInput onChangeHandler={onChangeFunctions} value={inputValue} />
-        <StyledForms />
-        <a
-          className="App-link"
-          href="https://github.com/MuhamedKrkmisevic"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          MUHAMED-GIT.HUB
-        </a>
+        <CustomDiv>
+          <h1>{fullName}</h1>
+        </CustomDiv>
+        <CustomForm sendData={(name, lName) => dataGrabber(name, lName)} />
       </header>
     </div>
   );
 };
+
 export default App;
