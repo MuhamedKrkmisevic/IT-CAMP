@@ -27,3 +27,4 @@ Child component is component which is included in Parent component
 Parent component can have more than one child components
 Child components can be also found in other components as children(prop)
 Children as a prop is a reserved name
+

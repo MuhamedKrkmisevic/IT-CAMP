@@ -42,3 +42,69 @@ const App = () => {
   );
 };
 export default App;
+
+import "./App.css";
+import CustomForm from "./components/CustomForm/CustomForm";
+import CustomDiv from "./components/CustomDiv/CustomDiv";
+import React, { useState } from "react";
+
+const App = () => {
+  const [fullName, setFullName] = useState("");
+
+  function dataGrabber(name, lastName) {
+    let fullName = name + " " + lastName;
+    console.log(fullName);
+    setFullName(fullName);
+  }
+  return (
+    <div className="App">
+      <header className="App-header">
+        <CustomDiv>
+          <h1>{fullName}</h1>
+        </CustomDiv>
+        <CustomForm sendData={(name, lName) => dataGrabber(name, lName)} />
+      </header>
+    </div>
+  );
+};
+
+export default App;
+
+import "./ToDo.css";
+import React, { useState, useEffect } from "react";
+import StyledInput from "../StyledInput/StyledInput";
+import StyledButton from "../StyledButton/StyledButton";
+
+const ToDo = () => {
+  const [done, setDone] = useState(false);
+  const [innerText, setInnerText] = useState("");
+  const [inputValue, setInputValue] = useState();
+
+  useEffect(() => {
+    done ? setInnerText("Done") : setInnerText("Not Done yet");
+  }, [done]);
+
+  function buttonClick() {
+    setDone(!done);
+  }
+  function onChangeFunctions(event) {
+    setInputValue(event.target.value);
+  }
+  return (
+    <>
+      <StyledButton innerText={innerText} onClickHandler={buttonClick} />
+      <StyledInput onChangeHandler={onChangeFunctions} value={inputValue} />
+      <br />
+      <StyledButton innerText={innerText} onClickHandler={buttonClick} />
+      <StyledInput onChangeHandler={onChangeFunctions} value={inputValue} />
+      <br />
+      <StyledButton innerText={innerText} onClickHandler={buttonClick} />
+      <StyledInput onChangeHandler={onChangeFunctions} value={inputValue} />
+      <br />
+      <StyledButton innerText={innerText} onClickHandler={buttonClick} />
+      <StyledInput onChangeHandler={onChangeFunctions} value={inputValue} />
+      <br />
+    </>
+  );
+};
+export default ToDo;
