@@ -1,10 +1,10 @@
 import "./App.css";
-import ToDo from "./components/ToDo/ToDo";
+import ToDo1 from "./components/ToDo/ToDo1";
 
 const App = () => {
   return (
     <div>
-      <ToDo />
+      <ToDo1 />
     </div>
   );
 };
