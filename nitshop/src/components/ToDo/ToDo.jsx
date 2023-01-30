@@ -6,6 +6,7 @@ function ToDo() {
   const [input, setInput] = useState("");
 
   const handleSubmit = (e) => {
+    if (input === "") return;
     e.preventDefault();
     setTodos([...todos, input]);
     setInput("");
