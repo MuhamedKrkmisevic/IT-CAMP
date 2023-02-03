@@ -28,3 +28,16 @@ Parent component can have more than one child components
 Child components can be also found in other components as children(prop)
 Children as a prop is a reserved name
 
+cd - change directory je komanda u terminalu 
+koja sluzi za navigiranje kroz foldere unutar sistema 
+
+ls - je komanda koja sluzi za izlistavanje 
+fajlova i foldera unutar foldera
+
+mkdir- make directory je komanda koja sluzi 
+za kreiranje novog direktorija ili foldera
+
+rm - is a comand which removes file or directory 
+for directory we use special flag -rf "rm -rf someFolder "
+
+for step back , we use "cd .. " command
