@@ -18,7 +18,7 @@ function ToDo() {
 
   return (
     <div className="app">
-      <h1>To-Do App</h1>
+      <h1>To-Do- App</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
