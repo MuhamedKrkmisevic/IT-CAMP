@@ -15,13 +15,9 @@ const TopRow = () => {
       border="0px"
       display="flex"
       alignItems="center"
+      alignContent="flex-start"
     >
-      <Grid
-        container
-        direction="row"
-        alignItems="center
-      "
-      >
+      <Grid container direction="row">
         <CustomDiv width="50%" border="0px" bgColor="inherit">
           <PhoneIcon />
           <p>+381637412151</p>
