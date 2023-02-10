@@ -8,12 +8,4 @@ const StyledDiv = styled.div`
   padding: 20px;
   opacity: ${(props) => (props.opacity ? props.opacity : 1)};
 `;
-//   border: 2px solid black;
-//   color: ${(props) => (props.primary ? "blue" : "white")};
-//   background-color:${(props) => (props.primary ? "white" : "blue")}
-//   padding: 20px;
-//   opacity: ${(props) => (props.opacity ? props.opacity : 1)};
-//   height: 300px;
-//   width: 300px;
-// `;
 export default StyledDiv;
