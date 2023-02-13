@@ -4,25 +4,36 @@ import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import { colors } from "../../util/theme";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material";
+import Text from "../../components/Text/Text";
+import { fontSize } from "../../util/theme";
 
 const TopRow = () => {
   return (
     <CustomDiv
       bgColor={colors.secondColor}
-      width="50%"
-      height="auto"
+      width="100%"
+      height="30px"
       padding="0px 5%"
       border="0px"
-      display="flex"
-      alignItems="center"
-      alignContent="flex-start"
     >
       <Grid container direction="row">
-        <CustomDiv width="50%" border="0px" bgColor="inherit">
-          <PhoneIcon />
-          <p>+381637412151</p>
-        </CustomDiv>
-        <CustomDiv width="50%" border="0px" bgColor="inherit"></CustomDiv>
+        <Grid item md={6} lg={6} spacing={0}>
+          <CustomDiv
+            display="flex"
+            alignItems="flex-start"
+            justifyItems=" flex-start"
+          >
+            <PhoneIcon
+              style={{
+                fontSize: fontSize.normal,
+              }}
+            />
+            <Text>+381637412151</Text>
+          </CustomDiv>
+        </Grid>
+        <Grid item md={6} lg={6} spacing={0}>
+          <CustomDiv width="50%" border="0px" bgColor="inherit"></CustomDiv>
+        </Grid>
       </Grid>
     </CustomDiv>
   );
