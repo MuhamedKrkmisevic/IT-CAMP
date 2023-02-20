@@ -47,7 +47,7 @@ const TopRow = () => {
       display="flex"
       width="100%"
       height="30px"
-      padding="0px 5%"
+      padding="0px 10%"
       border="0px"
     >
       <Grid container direction="row">
@@ -58,11 +58,11 @@ const TopRow = () => {
                 fontSize: fontSize.normal,
               }}
             />
-            <Text fontSize={fontSize.small}>+381669597807</Text>
+            <Text fontSize={fontSize.small}>+38163333333</Text>
             <CustomDiv
               display="flex"
               alignItems="center"
-              margin="0px 0px 0px 5px"
+              margin="0px 0px 0px 15px"
             >
               <EmailIcon
                 style={{

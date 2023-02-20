@@ -1,12 +1,5 @@
-// import React, { useState } from "react";
-
-// const CustomDiv = ({ children }) => {
-//   return <div>{children}</div>;
-// };
-
-// export default CustomDiv;
-import { display } from "@mui/system";
 import React from "react";
+import "./CustomDiv.css";
 
 const CustomDiv = ({
   children,
@@ -17,19 +10,20 @@ const CustomDiv = ({
   padding,
   margin,
   bgColor,
-  justifyContent,
   display,
+  justifyContent,
   justifyItems,
   alignItems,
   alignContent,
   verticalAlign,
   textAlign,
   letterSpacing,
+  borderBottom,
 }) => {
-  const divWidth = width ? width : 100;
-  const divHeight = height ? height : 100;
+  const divWidth = width ? width : "auto";
+  const divHeight = height ? height : "auto";
   const divBR = borderRadius ? borderRadius : 0;
-  const divBorder = border ? border : "0px ";
+  const divBorder = border ? border : "0px";
   const divMargin = margin ? margin : 0;
   const divPadding = padding ? padding : 0;
   const backgroundColor = bgColor ? bgColor : "inherit";
@@ -40,7 +34,8 @@ const CustomDiv = ({
   const ac = alignContent ? alignContent : "center";
   const va = verticalAlign ? verticalAlign : "middle";
   const ta = textAlign ? textAlign : "left";
-  const ls = letterSpacing ? letterSpacing : "1px";
+  const ls = letterSpacing ? letterSpacing : "0px";
+  const BrB = borderBottom ? borderBottom : "0px";
 
   return (
     <div
@@ -52,14 +47,15 @@ const CustomDiv = ({
         margin: divMargin,
         padding: divPadding,
         backgroundColor: backgroundColor,
+        display: disp,
         justifyContent: jc,
         justifyItems: ji,
-        alignItems: ai,
         alignContent: ac,
-        display: disp,
+        alignItems: ai,
         verticalAlign: va,
         textAlign: ta,
         letterSpacing: ls,
+        borderBottom: BrB,
       }}
     >
       {children}
