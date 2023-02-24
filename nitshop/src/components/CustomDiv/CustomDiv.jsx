@@ -37,7 +37,7 @@ const CustomDiv = ({
   const ta = textAlign ? textAlign : "left";
   const ls = letterSpacing ? letterSpacing : "0px";
   const BrB = borderBottom ? borderBottom : "0px";
-  const gp = gap ? gap : "0px";
+  const gapp = gap ? gap : "0px";
 
   return (
     <div
@@ -58,7 +58,7 @@ const CustomDiv = ({
         textAlign: ta,
         letterSpacing: ls,
         borderBottom: BrB,
-        gap: gp,
+        gap: gapp,
       }}
     >
       {children}

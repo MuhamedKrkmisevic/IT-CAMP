@@ -1,9 +1,10 @@
-import React from "react";
-import Grid from "@mui/material/Grid";
+import { Grid } from "@mui/material";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
 import Text from "../../components/Text/Text";
+import { colors, fontSize } from "../../util/theme";
+import TextField from "@mui/material/TextField";
+import SearchIcon from "@mui/icons-material/Search";
+import InputAdornment from "@mui/material/InputAdornment";
 
 const LinkBar = () => {
   return (
@@ -50,7 +51,19 @@ const LinkBar = () => {
             alignItems="center"
             justifyContent="flex-end"
             height="100%"
-          ></CustomDiv>
+          >
+            <TextField
+              size="small"
+              label="Search"
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <SearchIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </CustomDiv>
         </Grid>
       </Grid>
     </CustomDiv>
