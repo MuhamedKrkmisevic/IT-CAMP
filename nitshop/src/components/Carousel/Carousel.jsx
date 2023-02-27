@@ -1,15 +1,43 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as SliderCarousel } from "react-responsive-carousel";
+import { colors, fontSize } from "../../util/theme";
+import Text from "../Text/Text";
+import SimplifiedDiv from "../SimplifiedDiv/SimplifiedDiv";
 
-const Carousel = () => {
+const Carousel = ({ data }) => {
+  const styles = {
+    carouselText: {
+      position: "absolute",
+      bottom: 30,
+      left: 10,
+      right: 10,
+    },
+  };
   return (
-    <SliderCarousel>
-      {data.map((d) => {
-        <div>
-          <img src={d.imgSrc} />
-          <p className="legend">{d.imgText}</p>
-        </div>;
-      })}
+    <SliderCarousel
+      width="100%"
+      axis="horizontal"
+      dynamicHeight="100%"
+      showIndicators
+      showThumbs={false}
+      interval={1000}
+      autoPlay
+      infiniteLoop
+      showStatus={false}
+    >
+      {data.map((d) => (
+        <div key={d} style={{ height: "400px" }}>
+          <img
+            src={d.imgSrc}
+            style={{ height: "100%", objectFit: "contain" }}
+          />
+          <SimplifiedDiv>
+            <Text fontSize={fontSize.xLarge} color={colors.gray}>
+              {d.imgText}
+            </Text>
+          </SimplifiedDiv>
+        </div>
+      ))}
     </SliderCarousel>
   );
 };

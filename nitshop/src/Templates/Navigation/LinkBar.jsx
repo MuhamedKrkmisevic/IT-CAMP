@@ -17,7 +17,7 @@ const LinkBar = () => {
       border="0px"
     >
       <Grid container direction="row">
-        <Grid item md={6} lg={6}>
+        <Grid item sm={6} md={6} lg={6}>
           <CustomDiv
             display="flex"
             gap="20px"
@@ -45,7 +45,7 @@ const LinkBar = () => {
             </text>
           </CustomDiv>
         </Grid>
-        <Grid item md={6} lg={6}>
+        <Grid item sm={6} md={6} lg={6}>
           <CustomDiv
             display="flex"
             alignItems="center"
