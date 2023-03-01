@@ -17,13 +17,14 @@ const Carousel = ({ data }) => {
     <SliderCarousel
       width="100%"
       axis="horizontal"
-      dynamicHeight="100%"
       showIndicators
       showThumbs={false}
       interval={1000}
       autoPlay
       infiniteLoop
       showStatus={false}
+      showArrows={false}
+      swipeable
     >
       {data.map((d) => (
         <div key={d} style={{ height: "400px" }}>

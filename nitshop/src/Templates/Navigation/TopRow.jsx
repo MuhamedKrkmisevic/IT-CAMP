@@ -39,6 +39,11 @@ const SocialIcons = () => (
 const TopRow = () => {
   const screenWidth = getScreenWidth();
 
+  const alignItemsInFirstDiv = screenWidth === "SM" ? "center" : "flex-end";
+  const alignItemsInSecondDiv = screenWidth === "SM" ? "center" : "flex-start";
+  const paddingDiv = screenWidth === "SM" ? "10px 0px" : "0px";
+  const topHeightDiv = screenWidth === "SM" ? "auto" : "30px";
+
   console.log(screenWidth);
 
   return (
@@ -46,13 +51,18 @@ const TopRow = () => {
       bgColor={colors.secondColor}
       display="flex"
       width="100%"
-      height="30px"
+      height={topHeightDiv}
       padding="0px 10%"
       border="0px"
     >
       <Grid container direction="row">
-        <Grid item md={6} lg={6}>
-          <CustomDiv display="flex" alignItems="center">
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+          <CustomDiv
+            display="flex"
+            alignItems="center"
+            justifyContent={alignItemsInFirstDiv}
+            padding={paddingDiv}
+          >
             <PhoneIcon
               style={{
                 fontSize: fontSize.normal,
@@ -73,11 +83,12 @@ const TopRow = () => {
             </CustomDiv>
           </CustomDiv>
         </Grid>
-        <Grid item md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <CustomDiv
             display="flex"
             alignItems="center"
-            justifyContent="flex-end"
+            justifyContent={alignItemsInSecondDiv}
+            padding={paddingDiv}
           >
             <SocialIcons />
           </CustomDiv>
