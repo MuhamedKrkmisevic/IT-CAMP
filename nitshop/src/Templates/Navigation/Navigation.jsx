@@ -12,7 +12,6 @@ const Navigation = () => {
       <TopRow />
       <MainBar />
       <LinkBar />
-      <Slider />
     </Grid>
   );
 };
