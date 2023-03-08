@@ -15,10 +15,11 @@ const ProductsHomePage = () => {
     <SimplifiedDiv style={styles.container}>
       <Grid container direction="row">
         <Grid item md={3} lg={3}>
-          <CategoryTab>
+          <Text>CATEGORY</Text>
+          <CategoryTab />
         </Grid>
         <Grid item md={9} lg={9}>
-          <Text>Grid 8</Text>
+          <Text>PRODUCTS</Text>
         </Grid>
       </Grid>
     </SimplifiedDiv>

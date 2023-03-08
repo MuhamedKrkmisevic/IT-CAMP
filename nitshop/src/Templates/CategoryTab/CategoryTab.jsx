@@ -69,6 +69,10 @@ const CategoryTab = () => {
 
       borderRadius: "2px",
       textAlign: "left",
+      padding: "15px 20px",
+    },
+    categories: {
+      padding: "5px 0px",
     },
   };
 
