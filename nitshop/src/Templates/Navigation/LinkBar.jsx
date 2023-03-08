@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
-import Text from "../../components/Text/Text";
+
 import { colors, fontSize } from "../../util/theme";
 import { getScreenWidth } from "../../util/helpers.js";
 import TextField from "@mui/material/TextField";
@@ -9,6 +9,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import InputAdornment from "@mui/material/InputAdornment";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
+import Text from "../../components/Text/Text";
 
 const styles = {
   navBar: {
@@ -31,6 +32,13 @@ const styles = {
   linkMenu: {
     backgroundColor: colors.gray,
     textAlign: "left",
+    padding: "10px 20px",
+    margin: "15px 0px",
+  },
+  links: {
+    padding: "10px 0px",
+    fontSize: fontSize.normal,
+    color: colors.white,
   },
 };
 
@@ -44,19 +52,19 @@ const LinkBar = () => {
       <Grid container direction="row">
         <Grid item sm={6} md={6} lg={6}>
           <SimplifiedDiv style={styles.navBar}>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
+            <Text fontSize={fontSize.normal} color={colors.white}>
               Home
             </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
+            <Text fontSize={fontSize.normal} color={colors.white}>
               Shop
             </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
+            <Text fontSize={fontSize.normal} color={colors.white}>
               Blog
             </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
+            <Text fontSize={fontSize.normal} color={colors.white}>
               About
             </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
+            <Text fontSize={fontSize.normal} color={colors.white}>
               Kontakt
             </Text>
           </SimplifiedDiv>
@@ -98,7 +106,7 @@ const LinkBar = () => {
           alignItems: "center",
         }}
       >
-        <Grid item xs={6} sm={6} md={6}>
+        <Grid item xs={6} sm={6} md={6} lg={6}>
           <TextField
             size="small"
             label="Search"
@@ -111,7 +119,7 @@ const LinkBar = () => {
             }}
           />
         </Grid>
-        <Grid item xs={6} sm={6} md={6}>
+        <Grid item xs={6} sm={6} md={6} lg={6}>
           <SimplifiedDiv
             style={{
               display: "flex",
@@ -134,21 +142,11 @@ const LinkBar = () => {
       </SimplifiedDiv>
       {isOpen && (
         <SimplifiedDiv style={styles.linkMenu}>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
-            Home
-          </Text>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
-            Shop
-          </Text>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
-            Blog
-          </Text>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
-            About
-          </Text>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
-            Kontakt
-          </Text>
+          <Text style={styles.links}>Home</Text>
+          <Text style={styles.links}>Shop</Text>
+          <Text style={styles.links}>Blog</Text>
+          <Text style={styles.links}>About</Text>
+          <Text style={styles.links}>Kontakt</Text>
         </SimplifiedDiv>
       )}
     </SimplifiedDiv>

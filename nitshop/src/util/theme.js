@@ -5,6 +5,10 @@ export const colors = {
   lightGray: "#b3b1b1",
   lightBlack: "#2e2d2d",
   black: "black",
+  limeGreen: "#9de848",
+  lightRed: "#f23f35",
+  red: "red",
+  white: "white",
 };
 
 export const fontWeight = {
@@ -17,6 +21,7 @@ export const fontWeight = {
 export const fontSize = {
   xSmall: "10px",
   small: "12px",
+  optimal: "13px",
   smallPlus: "14px",
   normal: "16px",
   medium: "18px",

@@ -37,9 +37,11 @@ const Slider = () => {
       ? "0px 10px"
       : "0px 10%";
 
+  const sliderWidthSM = deviceWidth !== "LG" ? "100%" : "80%";
+
   const styles = {
     sliderContainer: {
-      width: "80%",
+      width: sliderWidthSM,
       height: "auto",
       margin: "0px,10%",
       paddingTop: setPaddingTop,
