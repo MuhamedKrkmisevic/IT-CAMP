@@ -1,20 +1,27 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import CustomDiv from "../../components/CustomDiv/CustomDiv";
+import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
+import Text from "../../components/Text/Text";
+import CategoryTab from "../CategoryTab/CategoryTab";
 
-import { colors, fontSize } from "../../util/theme";
+const styles = {
+  container: {
+    padding: "0px 10%",
+  },
+};
 
 const ProductsHomePage = () => {
   return (
-    <CustomDiv bgColor="white" padding="0px 10%">
+    <SimplifiedDiv style={styles.container}>
       <Grid container direction="row">
-        <Grid item sm={4} xs={4} md={4} lg={4} border="solid gray 1px">
-          Nesto
+        <Grid item md={3} lg={3}>
+          <CategoryTab>
         </Grid>
-
-        <Grid item sm={8} xs={8} md={8} lg={8} border="solid gray 1px"></Grid>
+        <Grid item md={9} lg={9}>
+          <Text>Grid 8</Text>
+        </Grid>
       </Grid>
-    </CustomDiv>
+    </SimplifiedDiv>
   );
 };
 
