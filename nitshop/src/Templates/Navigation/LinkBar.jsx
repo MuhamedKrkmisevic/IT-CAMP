@@ -52,19 +52,19 @@ const LinkBar = () => {
       <Grid container direction="row">
         <Grid item sm={6} md={6} lg={6}>
           <SimplifiedDiv style={styles.navBar}>
-            <Text fontSize={fontSize.normal} color={colors.white}>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
               Home
             </Text>
-            <Text fontSize={fontSize.normal} color={colors.white}>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
               Shop
             </Text>
-            <Text fontSize={fontSize.normal} color={colors.white}>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
               Blog
             </Text>
-            <Text fontSize={fontSize.normal} color={colors.white}>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
               About
             </Text>
-            <Text fontSize={fontSize.normal} color={colors.white}>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
               Kontakt
             </Text>
           </SimplifiedDiv>
