@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 
-import { colors, fontSize } from "../../util/theme";
+import { colors, fontSize, fontFamily } from "../../util/theme";
 import { getScreenWidth } from "../../util/helpers.js";
 import TextField from "@mui/material/TextField";
 import SearchIcon from "@mui/icons-material/Search";
@@ -40,6 +40,12 @@ const styles = {
     fontSize: fontSize.normal,
     color: colors.white,
   },
+
+  linksLG: {
+    fontFamily: fontFamily.LatoRegular,
+    fontSize: fontSize.normal,
+    color: colors.gray,
+  },
 };
 
 const LinkBar = () => {
@@ -52,21 +58,11 @@ const LinkBar = () => {
       <Grid container direction="row">
         <Grid item sm={6} md={6} lg={6}>
           <SimplifiedDiv style={styles.navBar}>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
-              Home
-            </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
-              Shop
-            </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
-              Blog
-            </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
-              About
-            </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
-              Kontakt
-            </Text>
+            <Text style={styles.linksLG}>Home</Text>
+            <Text style={styles.linksLG}>Shop</Text>
+            <Text style={styles.linksLG}>Blog</Text>
+            <Text style={styles.linksLG}>About</Text>
+            <Text style={styles.linksLG}>Kontakt</Text>
           </SimplifiedDiv>
         </Grid>
         <Grid item sm={6} md={6} lg={6}>
