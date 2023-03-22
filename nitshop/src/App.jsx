@@ -7,6 +7,7 @@ import StyledDiv from "./components/StyledDiv/StyledDiv";
 import Navigation from "./Templates/Navigation/Navigation";
 import Slider from "./components/Slider/Slider";
 import ProductsHomePage from "./Templates/ProductsHomePage/ProductsHomePage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./assets/fonts/Lato-Black.ttf";
 import "./assets/fonts/Lato-BlackItalic.ttf";
@@ -24,13 +25,25 @@ import "./assets/fonts/Montserrat-Bold.ttf";
 import "./assets/fonts/Montserrat-BoldItalic.ttf";
 import "./assets/fonts/Montserrat-ExtraBold.ttf";
 import "./assets/fonts/Montserrat-ExtraLight.ttf";
+import HomePageScreen from "./Screens/HomePageScreen.jsx/HomePageScreen";
+import ShopScreen from "./Screens/ShopScreen/ShopScreen";
 
 const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/home",
+      element: <HomePageScreen />,
+    },
+    {
+      path: "/shop",
+      element: <ShopScreen />,
+    },
+  ]);
   return (
     <>
-      <Navigation />
-      <Slider />
-      <ProductsHomePage />
+      <RouterProvider router={router} />
+
+      {/*  */}
     </>
   );
 };
