@@ -1,13 +1,5 @@
 import React from "react";
 import "./App.css";
-import GridCmp from "./components/Grid/Grid";
-import PrimaryButton from "./components/PrimaryButton/PrimaryButton";
-import StyledButton from "./components/StyledButton/StyledButton";
-import StyledDiv from "./components/StyledDiv/StyledDiv";
-import Navigation from "./Templates/Navigation/Navigation";
-import Slider from "./components/Slider/Slider";
-import ProductsHomePage from "./Templates/ProductsHomePage/ProductsHomePage";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./assets/fonts/Lato-Black.ttf";
 import "./assets/fonts/Lato-BlackItalic.ttf";
@@ -25,8 +17,13 @@ import "./assets/fonts/Montserrat-Bold.ttf";
 import "./assets/fonts/Montserrat-BoldItalic.ttf";
 import "./assets/fonts/Montserrat-ExtraBold.ttf";
 import "./assets/fonts/Montserrat-ExtraLight.ttf";
-import HomePageScreen from "./Screens/HomePageScreen.jsx/HomePageScreen";
+import CartScreen from "./Screens/CartScreen/CartScreen";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePageScreen from "./Screens/HomePageScreen/HomePageScreen";
 import ShopScreen from "./Screens/ShopScreen/ShopScreen";
+import BlogScreen from "./Screens/BlogScreen/BlogScreen";
+import AboutScreen from "./Screens/AboutScreen/AboutScreen";
+import ContactScreen from "./Screens/ContactScreen/ContactScreen";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -38,13 +35,29 @@ const App = () => {
       path: "/shop",
       element: <ShopScreen />,
     },
+    {
+      path: "/blog",
+      element: <BlogScreen />,
+    },
+    {
+      path: "/about",
+      element: <AboutScreen />,
+    },
+    {
+      path: "/contact",
+      element: <ContactScreen />,
+    },
+    {
+      path: "/cart",
+      element: <CartScreen />,
+    },
   ]);
+
   return (
     <>
       <RouterProvider router={router} />
-
-      {/*  */}
     </>
   );
 };
+
 export default App;

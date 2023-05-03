@@ -5,6 +5,7 @@ import TopRow from "./TopRow";
 import MainBar from "./MainBar";
 import LinkBar from "./LinkBar";
 import Slider from "../../components/Slider/Slider";
+import FooterLinkBar from "../Footer/FooterLinkBar";
 
 const Navigation = () => {
   return (
