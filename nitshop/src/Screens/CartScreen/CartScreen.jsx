@@ -1,16 +1,14 @@
-import { Grid } from "@mui/material";
 import React from "react";
-import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import Footer from "../../Templates/Footer/Footer";
-import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import Navigation from "../../Templates/Navigation/Navigation";
-import LinkBar from "../../Templates/Navigation/LinkBar";
-import TopRow from "../../Templates/Navigation/TopRow";
+import Footer from "../../Templates/Footer/Footer";
+import CartPage from "../../Templates/CartPage/CartPage";
 
 const CartScreen = () => {
   return (
     <>
       <Navigation />
+      <CartPage />
+      <Footer />
     </>
   );
 };
