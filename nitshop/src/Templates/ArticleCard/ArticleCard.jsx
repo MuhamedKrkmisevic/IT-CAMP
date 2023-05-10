@@ -1,21 +1,24 @@
 import React from "react";
 import Text from "../../components/Text/Text";
+import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import { Card } from "@mui/material";
-import { fontSize, colors, fontWeight } from "../../util/theme";
-import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
+import { colors, fontSize, fontWeight } from "../../util/theme";
 import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
 
-const ArticleCard = ({ title, description, image, price, onShowMore }) => {
+const ArticleCard = ({ title, description, image, price, onClickButton }) => {
   const styles = {
     imageContainer: {
       width: "100%",
       height: "200px",
     },
-    image: { objectFit: "contain", width: "100%", height: "100%" },
+    image: {
+      objectFit: "contain",
+      width: "100%",
+      height: "100%",
+    },
     descriptionContainer: {
       display: "grid",
-
       placeItems: "center",
       gap: 8,
       margin: "10px 15px",
@@ -23,9 +26,10 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
     buttonHolder: {
       display: "flex",
       justifyContent: "center",
-      padding: "10px 0px",
+      alignItems: "center",
+      padding: "10px",
     },
-    ShoppingCartOutlined: {
+    shoppingCartIcon: {
       fontSize: fontSize.normal,
       margin: "0px 3px",
     },
@@ -41,10 +45,10 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
       <SimplifiedDiv style={styles.descriptionContainer}>
         <Text
           color={colors.accentColor}
-          fontSize={fontSize.large}
           fontWeight={fontWeight.mediumBold}
+          fontSize={fontSize.large}
         >
-          {price}
+          {price + "$"}
         </Text>
         <Text fontSize={fontSize.medium}>{title}</Text>
         <Text color={colors.lightBlack} fontSize={fontSize.optimal}>
@@ -58,10 +62,9 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
           primary
           borderRadius="3px"
           padding="10px"
-          color={colors.accentColor}
-          onClick={onShowMore}
+          onClick={() => onClickButton({ image, price, title, qty: 1 })}
         >
-          <ShoppingCartOutlined style={styles.ShoppingCartOutlined} />
+          <ShoppingCartOutlined style={styles.shoppingCartIcon} />
           Add to cart
         </PrimaryButton>
       </SimplifiedDiv>
