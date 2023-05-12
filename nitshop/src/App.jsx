@@ -30,7 +30,7 @@ import CartContextProvider, { CartContext } from "./context/CartContext";
 const App = () => {
   const router = createBrowserRouter([
     {
-      path: "/home",
+      path: "/",
       element: <HomePageScreen />,
     },
     {

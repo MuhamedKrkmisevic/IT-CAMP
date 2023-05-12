@@ -60,7 +60,7 @@ const LinkBar = () => {
       <Grid container direction="row">
         <Grid item sm={6} md={6} lg={6}>
           <SimplifiedDiv style={styles.navBar}>
-            <Link to="/home" style={styles.linksLG}>
+            <Link to="/" style={styles.linksLG}>
               Home
             </Link>
             <Link to="/shop" style={styles.linksLG}>
