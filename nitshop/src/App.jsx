@@ -26,6 +26,7 @@ import AboutScreen from "./Screens/AboutScreen/AboutScreen";
 import ContactScreen from "./Screens/ContactScreen/ContactScreen";
 import CartScreen from "./Screens/CartScreen/CartScreen";
 import CartContextProvider, { CartContext } from "./context/CartContext";
+import LoginScreen from "./Screens/LoginScreen.jsx/LoginScreen";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const App = () => {
     {
       path: "/shop",
       element: <ShopScreen />,
+    },
+    {
+      path: "/login",
+      element: <LoginScreen />,
     },
     {
       path: "/blog",
