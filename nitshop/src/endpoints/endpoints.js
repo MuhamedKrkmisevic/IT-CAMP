@@ -6,7 +6,7 @@ export const postEndpoint = {
   fetchAll: "https://jsonplaceholder.typicode.com/posts",
 };
 
-export const commentsEndpoints = {
+export const commentsEndpoint = {
   fetchAll: "https://jsonplaceholder.typicode.com/comments",
 };
 
